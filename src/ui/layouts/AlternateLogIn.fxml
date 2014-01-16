@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane minHeight="-1.0" minWidth="-1.0" prefHeight="600.0" prefWidth="400.0"
+            xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+            fx:controller="ui.controllers.ControllerAlternateLogIn">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0"
+                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="-1.0" prefWidth="250.0"
+                              spacing="10.0" HBox.hgrow="NEVER">
+                            <children>
+                                <Label text="ID:" VBox.vgrow="NEVER"/>
+                                <TextField fx:id="mTextFieldID" prefWidth="-1.0"
+                                           VBox.vgrow="NEVER"/>
+                                <Label text="Port:" VBox.vgrow="NEVER"/>
+                                <TextField fx:id="mTextFieldPort" prefWidth="-1.0"
+                                           VBox.vgrow="NEVER"/>
+                                <Label text="IP Address:" VBox.vgrow="NEVER"/>
+                                <TextField fx:id="mTextFieldIPAddress" prefWidth="-1.0"
+                                           VBox.vgrow="NEVER"/>
+                                <HBox alignment="CENTER" prefHeight="-1.0" prefWidth="-1.0"
+                                      spacing="10.0" VBox.vgrow="NEVER">
+                                    <children>
+                                        <Button mnemonicParsing="false" text="Log In"
+                                                HBox.hgrow="NEVER" onAction="#handleButtonLogIn"/>
+                                        <Button mnemonicParsing="false" text="Cancel"
+                                                HBox.hgrow="NEVER" onAction="#handleButtonCancel"/>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </center>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+</BorderPane>
